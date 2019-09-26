@@ -1,0 +1,18 @@
+#external {
+  color: green;
+  background: red;
+}
+
+p{
+  color: purple;
+}
+
+.paragraph-example {
+  color: crimson
+}
+
+body>p{
+  color: pink
+}
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */

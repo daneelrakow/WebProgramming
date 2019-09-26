@@ -1,0 +1,16 @@
+#external {
+  color: green;
+  background: red;
+}
+
+p{
+  color: purple;
+}
+
+.paragraph-example {
+  color: crimson
+}
+
+body>p{
+  color: pink
+}
