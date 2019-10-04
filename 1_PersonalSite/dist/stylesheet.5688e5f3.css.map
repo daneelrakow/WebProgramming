@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles/stylesheet.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"stylesheet.5688e5f3.css","sourceRoot":"..","sourcesContent":["\r\nhtml {\r\n  background: lightgray;\r\n  font-family: 'Montserrat', sans-serif;\r\n}\r\n\r\n.heading {\r\n  color: blue;\r\n}\r\nimg {\r\n}\r\n"]}

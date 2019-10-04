@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css" type = "text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Responsive Design</title>
-  </head>
-  <body>
-    <header>
-      <h2>Responsive Design</h1>
-    </header>
+
+<head>
+  <!-- this make website responsive -->
+  <meta name="viewport" content="width=devicewidth, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Responsive Design</title>
+  <style type="text/css">
+     html, body {
+       margin: 0;
+     }
+     .card-container {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-around;
+     }
+     .card-container>div {
+       max-width: 400px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+     }
+     .card-container img {
+       width: 100%;
+     }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Responsive Design</h1>
+  </header>
+  <section class = "card-container">
+    <div>
+      <img src="./image/logo-new.png" alt="">
+      <p>This is text for the webpage.</p>
+      <button type="button" name="button">Click this button.</button>
+    </div>
+    <div>
+      <img src="./image/mtg.png" alt="">
+      <p>This is text for the webpage.</p>
+      <button type="button" name="button">Click this button.</button>
+    </div>
+    <div>
+      <img src="./image/mycar.png" alt="">
+      <p>This is text for the webpage.</p>
+      <button type="button" name="button">Click this button.</button>
+    </div>
+    <div>
+      <img src="./image/valleylogo.png" alt="">
+      <p>This is text for the webpage.</p>
+      <button type="button" name="button">Click this button.</button>
+    </div>
+  </section>
 
 
-  </body>
+</body>
+
 </html>
