@@ -1,5 +1,7 @@
 
-html {
+html,body {
+  margin: 0;
+  padding: 0;
   background: lightgray;
   font-family: 'Montserrat', sans-serif;
 }
@@ -15,7 +17,7 @@ a:link {
 	text-decoration: none;
 }
 
-a:visited{ 
+a:visited{
 	color: darkgreen;
 	text-decoration: none;
 }
