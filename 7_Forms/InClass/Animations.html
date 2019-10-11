@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animations!</title>
+
+    <style type="text/css">
+      html, body{
+        padding: 0;
+        margin: 0;
+      }
+      #loop {
+        height: 200px;
+        width: 200px;
+        border: solid 2px black;
+        animation: square;
+        animation-duration: 1s;
+        animation-iteration-count: infinte;
+      }
+
+      @keyframes square{
+        from {
+          border-radius: 50px;
+        }
+
+        to {
+          border-radius: 0px;
+        }
+      }
+
+      @keyframes fire {
+        0%{
+          background-color: hsla()
+        }
+
+        0%{
+          background-color: hsla()
+        }
+
+        0%{
+          background-color: hsla()
+        }
+
+        0%{
+          background-color: hsla()
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loop">
+
+    </div>
+  </body>
+</html>

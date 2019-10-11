@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello Forms</title>
+
+  <style type="text/css">
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      background: lightgray;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    flex {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      margin: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <a href="http://httpbin.org/get?key=exampleValue&key2=value2">Example GET request</a>
+
+  <!-- example get form -->
+
+  <!-- example post form -->
+
+  <section>
+    <form action="http://httpbin.org/get" method="GET">
+      <input name="exampleKey" value="exampleValue">
+      <input name="key2" value="value2">
+      <button>Submit data to server</button>
+    </form>
+
+    <form class="" action="http://httpbin.org/post" method="POST">
+      <input name="exampleKey" value="hello">
+      <input type="key2" value="goodbye">
+      <button>post</button>
+    </form>
+  </section>
+  <!-- example of different types of input -->
+  <section>
+    <form action="http://httpbin.org/post" method="POST">
+      <input type="text" name="text" value="This form has a default value">
+      <label>
+        <span>Enter your name</span>
+        <input type="text" name="noDefault">
+      </label>
+
+      <label>
+        <span>Example Password</span>
+        <input type="password" name="password" value="">
+      </label>
+
+      <label>
+        <span>
+          Radio Buttons:Red
+        </span>
+        <input type="radio" name="favColor" value="Red">
+
+      </label>
+      <label>
+        <span>
+          Radio Buttons:Green
+        </span>
+        <input type="radio" name="favColor" value="Green">
+
+      </label>
+
+      <label>
+        <span>Check here to give a leg.</span>
+        <input type="checkbox" name="checkbox" value="giveLeg">
+      </label>
+      <label>
+        <span>Click here to give an arm.</span>
+        <input type="checkbox" name="checkbox" value="giveArm">
+      </label>
+
+      <label>
+        <span>Tell Me More</span>
+        <textarea name="textArea"></textarea>
+      </label>
+
+      <label>
+        <span>State of Residence</span>
+        <select name="select">
+          <option value=""></option>
+          <option value="MN">Minnesota</option>
+          <option value="TX">Texas</option>
+        </select>
+      </label>
+
+      <input type="hidden">
+
+      <input type="range" name="range" min="0" max="10">
+      <input type="number" name="number" min="0" max="10">
+      <input type="date" name="date">
+      <input type="time" name="time">
+      <input type="month" name="month">
+      <input type="year" name="year">
+      <input type="color" name="color">
+      <input type="tel" name="tel">
+      <input type="url" name="url">
+      <input type="email" name="email">
+      <button>Submit POST data to the server</button>
+      <input type="submit" value="Sub1">
+      <input type="submit" value="Sub2">
+
+    </form>
+  </section>
+
+  <!-- new stuff -->
+  <section>
+    <form>
+      <!-- <input required/> -->
+      <!-- <input required minlength="3" maxlength="4"/> -->
+      <span>Enter social security number:</span>
+      <input pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" title="Give me social!" />
+      <button>Validate the Form</button>
+    </form>
+  </section>
+
+
+</body>
+
+</html>
