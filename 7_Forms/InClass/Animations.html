@@ -14,7 +14,14 @@
         border: solid 2px black;
         animation: square;
         animation-duration: 1s;
-        animation-iteration-count: infinte;
+        animation-iteration-count: infinite;
+      }
+
+      #loop:hover{
+        animation: fire;
+        animation-iteration-count: 3;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
       }
 
       @keyframes square{
@@ -29,26 +36,25 @@
 
       @keyframes fire {
         0%{
-          background-color: hsla()
+          background-color: hsl(0,0%,0%);
+          transform: rotate3d(0,1,0,0deg);
         }
 
-        0%{
-          background-color: hsla()
+        50%{
+          background-color: hsla(0,0%,0%, .7)
+          transform: rotate3d(0,1,0, 90deg);
         }
 
-        0%{
-          background-color: hsla()
-        }
-
-        0%{
-          background-color: hsla()
+        100%{
+          background-color: hsla(0,0%,0%, .4);
+          transform: rotate3d(0,1,0, 180deg);
         }
       }
     </style>
   </head>
   <body>
     <div id="loop">
-
+      <p>Hey, check me out!</p>
     </div>
   </body>
 </html>
